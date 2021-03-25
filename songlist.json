@@ -1,0 +1,79 @@
+[
+{
+	"title": "dorothea",
+	"genre": ["Alternative", "Indie"],
+	"artist": "Taylor Swift",
+	year: 2020
+	
+},
+{
+	"title": "Streets",
+	"genre": ["R&B"],
+	"artist": "Doja Cat",
+	"year": 2019
+	
+},
+{
+	"title": "cellophane",
+	"genre": ["Dance","Electronic"],
+	"artist": "FKA Twigs",
+	"year": 2019
+	
+},
+{
+	"title": "Dead to Me",
+	"genre": ["R&B"],
+	"artist": "Kali Uchis",
+	"year": 2018
+	
+},
+{
+	"title": "Bella",
+	"genre": ["Hip-Hop", "Rap"],
+	"artist": "Bryce Vine",
+	"year": 2017
+	
+},
+{
+	"title": "Dark Red",
+	"genre": ["Alternative"."Indie"],
+	"artist": "Steve Lacy",
+	"year": 2017
+	
+},
+{
+	"title": "Visions of Gideon",
+	"genre": ["Neo-Folk"],
+	"artist": "Sufjan Stevens",
+	"year": 2018
+	
+},
+{
+	"title": "Therefore I Am",
+	"genre": ["Pop"],
+	"artist": "Billie Eilish",
+	"year": 2020
+	
+},
+{
+	"title": "Forgive Me",
+	"genre": ["Contemporary R&B"],
+	"artist": "Chloe X Halle",
+	"year": 2020
+	
+},
+{
+	"title": "After Hours",
+	"genre": ["R&B","Soul"],
+	"artist": "The Weeknd",
+	"year": 2020
+	
+},
+{
+	"title": "Warm Winds",
+	"genre":[ "Neo Soul"],
+	"artist": "SZA" ,
+	"year": 2014
+	
+}
+]
