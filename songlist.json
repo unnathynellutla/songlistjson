@@ -3,7 +3,7 @@
 	"title": "dorothea",
 	"genre": ["Alternative", "Indie"],
 	"artist": "Taylor Swift",
-	year: 2020
+	"year": 2020
 	
 },
 {
@@ -36,7 +36,7 @@
 },
 {
 	"title": "Dark Red",
-	"genre": ["Alternative"."Indie"],
+	"genre": ["Alternative","Indie"],
 	"artist": "Steve Lacy",
 	"year": 2017
 	
