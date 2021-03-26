@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JSON Song List</title>
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<script language="javascript">
+	var Data;
+	//function to get data from json file
+	$.get("https://raw.githubusercontent.com/unnathynellutla/songlistjson/main/songlist.json", 
+		  function( data ) {
+			Data = JSON.parse(data);
+			str = JSON.stringify(Data);
+			//print raw string of data from json file
+			document.getElementById("dataraw").innerHTML = str;
+		strHTML= "<ul>";
+		Data.forEach(function(song) { 
+		strHTML += "<li>" 
+				+ "Title: " + song.title + " <br> " 
+				+ "Genres: " + song.genre + "<br>"
+				+ "Artist: " + song.artist + "<br>"
+				+ "Released: " + song.year + "</li>";
+		})  
+		strHTML += "</ul>";
+		//print parsed data from JSON 
+		document.getElementById("data").innerHTML = strHTML; 
+		
+	});
+
+	function Filter(){
+		//
+		var gen = document.getElementById("genre").value;
+		var str2 = "Titles in Genre: <br>";
+		Data.forEach(function(song) {
+			//search for selected genre in data from json
+			if(song.genre.includes(gen)){
+				str2 += song.title + "<br>";
+			}
+		})
+		//print string of titles in selected genre
+		document.getElementById("titles").innerHTML = str2;
+	return false;
+	};
+</script>
+</head>
+
+<body>
+<div id = "dataraw"></div>
+<div id = "data"></div>
+	
+<h1>Select Genre</h1>
+<form id = "selectgenre" action = "songlistjson.html">
+	<select id="genre" value = "gen">
+	  <option value="R&amp;B">R&amp;B</option>
+	  <option value="Dance">Dance</option>
+	  <option value="Electronic">Electronic</option>
+	  <option value="Hip-Hop">Hip-Hop</option>
+	  <option value="Rap">Rap</option>
+	  <option value="Alternative">Alternative</option>
+	  <option value="Indie">Indie</option>
+	  <option value="Neo-Folk">Neo-Folk</option>
+	  <option value="Pop">Pop</option>
+	  <option value="Contemporary R&amp;B">Contemporary R&amp;B</option>
+	  <option value="Soul">Soul</option>
+	  <option value="Neo Soul">Neo Soul</option>
+	</select>
+	<button type = "button" onclick="Filter()">Filter</button>
+</form>
+<div id = "titles"></div>
+</body>
+</html>
+
